@@ -1,0 +1,57 @@
+# # Entornos Virtuales
+# Ignora la carpeta del entorno virtual para no subir todas las librerías.
+# Es la regla más importante.
+.venv/
+venv/
+env/
+ENV/
+
+# # Cache y artefactos de Python
+# Archivos de bytecode compilado y carpetas de cache.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# # Jupyter Notebooks
+# Ignora los checkpoints que Jupyter crea automáticamente.
+.ipynb_checkpoints/
+
+# # Editores de Código y IDEs
+# Configuraciones específicas del editor que no deben ser compartidas.
+.vscode/
+.idea/
+.cursor/
+
+# # Archivos de Dependencias y Build
+# Artefactos de construcción de paquetes y dependencias.
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+pip-selfcheck.json
+
+# # Archivos de entorno y secretos
+# NUNCA subas archivos .env que contienen claves de API, contraseñas, etc.
+.env
+*.env
+*.env.*
+
+# # Archivos del Sistema Operativo
+# Archivos temporales de macOS, Windows y Linux.
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# # Logs y Bases de Datos
+# Archivos de registro y bases de datos locales.
+*.log
+*.db
+*.sqlite3
+
+# # Datasets (Importante para Machine Learning)
+# Descomenta la siguiente línea si tu carpeta de datasets es muy grande
+# y no quieres subirla a GitHub. Reemplaza 'Dataset_ret/' con el
+# nombre real de tu carpeta de datos.
+/Dataset_ret/
+processed_images/
